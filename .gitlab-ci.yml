@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build:
+  stage: build
+  tags:
+    - vending
+  script:
+    - yarn install
+    - sed -i 's/127.0.0.01/vending.rugt.pro/g' src/core/request.js
+    - npm run build
+    - cp -r ./build/* /var/www/vending

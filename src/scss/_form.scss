@@ -1,0 +1,102 @@
+.form-group {
+  position: relative;
+  .form-control-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    font-size: 14px;
+    color: $grey-color;
+  }
+}
+
+.file-input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+}
+
+.text-input {
+  border: none;
+  border-bottom: solid 1px $grey-color;
+  width: 230px;
+  outline: none;
+  height: 35px;
+  font-size: 14px;
+  color: $icon-color;
+  padding: 0px 10px 10px 10px;
+  &:-webkit-autofill {
+    box-shadow: inset 0 0 0 50px #fff;
+  }
+
+  &:focus,
+  &:valid,
+  &:disabled
+  {
+    + .form-control-placeholder {
+      font-size: 10px;
+      transform: translate3d(0, -100%, 0);
+      color: $secondary-text-rgba;
+    }
+  }
+}
+
+.file-input-label {
+  font-size: 14px;
+  color: $grey-color-secondary;
+  background: url("/images/icon-add.svg") no-repeat center right;
+  display: block;
+  cursor: pointer;
+}
+
+.switcher-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 17px;
+
+  .switcher-wrapper__switcher {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d95858;
+    transition: 0.4s;
+    border-radius: 34px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 13px;
+      height: 13px;
+      background-color: #ffffff;
+      left: 2px;
+      bottom: 2px;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+
+  .switcher__input {
+    display: none;
+
+    &:checked {
+      & + .switcher-wrapper__switcher {
+        background-color: #729800;
+        &:before {
+          left: 1px;
+          transform: translateX(19px);
+        }
+      }
+    }
+
+    &:focus + .switcher-wrapper__switcher {
+      box-shadow: 0 0 1px #729800;
+    }
+  }
+}

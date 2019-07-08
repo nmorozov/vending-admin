@@ -1,0 +1,144 @@
+.add-coin-popup {
+  width: 1116px;
+  height: 411px;
+  box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 0.5px;
+  border-image-source: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4) 5%,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0)
+  );
+  border-image-slice: 1;
+
+  @media (max-width: 768px) {
+    width: 1039px;
+    @media (max-width: 768px) {
+      width: auto;
+      overflow: auto;
+    }
+    height: 560px;
+    box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 0.5px;
+    border-image-source: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.4) 5%,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0)
+    );
+    border-image-slice: 1;
+  }
+
+  &__little_caption {
+    font-size: 10px;
+    color: $secondary-text-rgba;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__big_caption {
+    font-size: 16px;
+    font-weight: bold;
+    color: $secondary-text-rgba;
+    margin: 15px 0 40px 0;
+  }
+
+  &__half_form {
+    margin-left: 60px;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__coin_constructor {
+    margin-left: 100px;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__add-coin-popup {
+    border: none;
+  }
+
+  &__buttons {
+    margin-top: 50px;
+  }
+
+  &__upload_frontside_picture_button {
+    width: 210px;
+    height: 210px;
+    display: block;
+    border-radius: 360px;
+    outline: none;
+    padding: 0;
+    background: url('/images/icon-plus.svg') center no-repeat,
+      url('/images/icon-oval.svg') center no-repeat;
+    border: none;
+    cursor: pointer;
+    margin: 31px auto;
+    font-family: 'Montserrat';
+  }
+  &__upload_frontside_picture_button canvas {
+    width: 208px;
+    height: 208px;
+  }
+
+  &__upload_backside_picture_button {
+    width: 210px;
+    height: 210px;
+    display: block;
+    border-radius: 360px;
+    outline: none;
+    padding: 0;
+    background: url('/images/icon-plus.svg') center no-repeat,
+      url('/images/icon-oval.svg') center no-repeat;
+    border: none;
+    margin: 31px auto;
+  }
+  &__upload_backside_picture_button canvas {
+    width: 208px;
+    height: 208px;
+  }
+
+  &__coins_side_select_buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .small-btn {
+      padding: 3px 14px;
+      margin-right: 10px;
+    }
+  }
+
+  .file-input-label {
+    width: 190px;
+    margin-top: 20px;
+  }
+
+  & .frontPicture-preview,
+  .backPicture-preview {
+    width: 208px;
+    height: 208px;
+    object-fit: fill;
+    border-radius: 120px;
+  }
+
+  .popup__button {
+    margin-right: 34px;
+  }
+}

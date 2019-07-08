@@ -1,0 +1,111 @@
+@import '../../scss/_colors.scss';
+
+.big-table-actions-bar {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .big-table-actions-bar__button {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    color: $secondary-text-rgba;
+    margin-left: 46px;
+    @media (max-width: 768px) {
+      margin-left: 30px;
+    }
+  }
+
+  .big-table-actions-bar__icon {
+    margin-left: 10px;
+  }
+
+  .big-table-actions-bar__filter {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    width: 216px;
+    padding-left: 25px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    .big-table-actions-bar__filter_title {
+      font-size: 14px;
+      font-weight: 500;
+      color: $secondary-color;
+      margin-right: 5px;
+    }
+
+    .big-table-actions-bar__filter_icon {
+      color: $secondary-color;
+      width: 9px;
+    }
+  }
+}
+
+.filter {
+  width: 216px;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1) 5%,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0)
+  );
+  border-image-slice: 1;
+  position: absolute;
+  left: 0;
+  top: -21px;
+
+  &__title {
+    margin-left: 25px;
+  }
+
+  &__devider {
+    border: 0;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.12);
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 14px;
+    color: $secondary-text-rgba;
+    height: 36px;
+  }
+
+  &__list_item_selected {
+    background: #eeeeee url(/images/icon-check-filter.svg) no-repeat 185px center;
+  }
+}

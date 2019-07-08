@@ -1,0 +1,69 @@
+@import '../../scss/_colors.scss';
+
+.mobile-menu-container {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  &__open_drawer_button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    align-items: center;
+  }
+
+  & &__mobile-menu_icon {
+    width: 22px;
+    height: 19.5px;
+    color: $secondary-color;
+    @media (min-width: 769px) {
+        display: none;
+    }
+  }
+
+  & &__mobile-menu_icon_black {
+    opacity: 1;
+  }
+
+  &__mobile-menu_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: $main-text-alpha;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__close_drawer_button {
+    width: 17px;
+    height: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: url('/images/icon-close.svg') no-repeat center;
+  }
+
+  &__logo {
+    width: 174px;
+    height: 38px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  &__owner-full-name {
+    margin-top: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $secondary-text-rgba;
+    margin-bottom: 58px;
+  }
+}
+
+.drawer-content {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+  padding: 0 20px;
+}

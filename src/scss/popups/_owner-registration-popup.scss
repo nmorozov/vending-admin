@@ -1,0 +1,58 @@
+.owner-registration-popup {
+    width: 1039px;
+    min-height: 570px;
+    box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 0.5px;
+    border-image-source: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.4) 5%,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0)
+    );
+    border-image-slice: 1;
+  
+    &__title_container {
+        margin-bottom: 41px;
+        align-items: center;
+    }
+  
+    &__title {
+      color: $secondary-text-rgba;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1;
+      width: 230px;
+      margin-right: 60px;
+    }
+  
+    &__body {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    &__half_form {
+      margin-left: 60px;
+    }
+  
+    &__switcher_container {
+        display: flex;
+    }
+  
+    &__switcher_title {
+      font-size: 12px;
+      color: $secondary-text-rgba;
+      margin-right: 15px;
+    }
+  
+    &__buttons {
+      text-align: center;
+      margin: 40px auto 0 auto;
+    }
+    .short-company-name {
+      height: 50px;
+    }
+  }
+  

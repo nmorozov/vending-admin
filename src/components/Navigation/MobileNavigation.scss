@@ -1,0 +1,27 @@
+@import '../../scss/_colors.scss';
+
+.mobile-navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__navigation_link {
+        font-size: 14px;
+        color: $secondary-text-rgba;
+    }
+
+    &__navigation_item {
+        margin-bottom: 25px;
+
+        &.navigation_item_active {
+            border-bottom: 3px solid $secondary-color;
+
+            .mobile-navigation__navigation_link {
+                color: $main-text-rgba;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../scss/_colors.scss';
+
+$captions-color: #232425;
+
+.sales-chart-wrapper {
+  margin-top: 60px;
+}
+
+.chart-period-wrapper {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 20px;
+
+  &__item {
+    font-size: 12px;
+    padding: 4px 0;
+    margin-right: 20px;
+    color: $captions-color;
+    button {
+      background: none;
+      border: 0;
+      outline: none;
+    }
+  }
+
+  &__item_active {
+    color: $main-color;
+    border-bottom: 2px solid $main-color;
+    font-weight: bold;
+  }
+}

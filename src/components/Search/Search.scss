@@ -1,0 +1,59 @@
+@import '../../scss/_colors.scss';
+
+.drawer-content {
+  .search {
+    @media (min-width: 769px) {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+}
+
+.search {
+  width: 385px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  border: solid 1px $grey-color;
+  margin-right: 31px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30.9px 0 30px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  .search_search_input {
+    height: 100%;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-right: 10px;
+
+    &::placeholder {
+      font-size: 13px;
+      color: $grey-color-secondary;
+      font-style: italic;
+    }
+  }
+
+  .search_search_icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.54;
+    color: $icon-color;
+    cursor: pointer;
+  }
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

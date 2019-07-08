@@ -1,0 +1,25 @@
+.table-full-width {
+  &.coins-table {
+    .table-full-width__head_item {
+      &:last-child {
+        text-align: center;
+      }
+    }
+    .table-full-width__body_row {
+      .table-full-width__body_cell {
+        &:last-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .coins-table {
+    &__coin_image {
+      height: 50px;
+      width: 50px;
+      border-radius: 120px;
+      font-family: 'Montserrat';
+    }
+  }
+}

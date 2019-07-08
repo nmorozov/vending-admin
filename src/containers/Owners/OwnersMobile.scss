@@ -1,0 +1,66 @@
+@import '../../scss//colors';
+
+.owners-mobile {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  .owner-mobile {
+    &__owner {
+      width: 100%;
+      height: 325px;
+      padding: 20px 15px;
+      display: flex;
+    }
+
+    &__wrap {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+      background-color: #ffffff;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__owner_captions {
+      font-size: 14px;
+      font-weight: bold;
+      color: $secondary-text-rgba;
+      width: 140px;
+      margin-right: 28px;
+    }
+
+    &__owner_caption {
+        margin-bottom: 15px;
+    }
+
+    &__owner_value {
+        margin-bottom: 15px;
+        &--bold {
+          font-weight: bold;
+          color: $main-text-rgba;
+      }
+    }
+  }
+
+  &__owner_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+  }
+
+  .table-full-width__point {
+    width: 6px;
+    height: 6px;
+    border-radius: 60px;
+    margin-top: 23px;
+
+    &.table-ful-width__point_green {
+      background-color: #259d1f;
+    }
+
+    &.table-ful-width__point_red {
+      background-color: #b83131;
+    }
+  }
+}

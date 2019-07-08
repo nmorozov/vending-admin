@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "printWidth": 120
+      }
+    ],
+    "class-methods-use-this": "off",
+    "no-shadow": "off",
+    "no-eval": "off",
+    "no-irregular-whitespace": "off",
+    "no-console": "error",
+    "no-debugger": "warn",
+    "no-useless-escape": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/prefer-stateless-function": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "react/no-typos": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": []
+      }
+    ],
+    "jsx-a11y/label-has-for": "off",
+    "max-params": ["error", 4]
+  },
+  "plugins": ["prettier", "react"],
+  "settings": {
+    "import/extensions": [".js", ".jsx"],
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  },
+  "globals": {
+    "Ya": true
+  }
+}

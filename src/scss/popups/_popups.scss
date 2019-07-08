@@ -1,0 +1,133 @@
+@import './_send-message-popup.scss';
+@import './_add-edit-device-popup.scss';
+@import './_profile-edit-popup.scss';
+@import './_add-edit-owner-popup.scss';
+@import './_add-coin-popup';
+@import './add-edit-envelope-popup';
+@import './add-edit-order-popup';
+@import './export-statistics-popup';
+@import './_owner-registration-popup.scss';
+@import './monitoring-popup.scss';
+
+.popup-overlay {
+  position: fixed;
+  overflow-y: auto;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(41, 41, 41, 0.7);
+}
+
+.popup {
+  outline: none;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 60px;
+
+  *::placeholder {
+    font-size: 14px;
+    color: $grey-color-secondary;
+  }
+
+  .popup-form-group {
+    width: 230px;
+    min-height: 44px;
+    margin-top: 10px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .validation-error {
+      color: red;
+      margin-bottom: 5px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &--width260 {
+      width: 260px;
+    }
+
+    &--vertical-align-center {
+      display: flex;
+      align-items: center;
+    }
+
+    &.form-group {
+      .form-control-placeholder {
+        color: $grey-color-secondary;
+        padding: 7px 0 0 10px;
+      }
+    }
+
+    .text-input:focus {
+      & + .form-control-placeholder,
+      .text-input:valid + .form-control-placeholder, 
+      {
+        color: $secondary-text-alpha;
+        padding: 7px 0 0 10px;
+      }
+    }
+
+    .popup-form-input {
+      width: 100%;
+      border: none;
+      border-bottom: solid 1px $grey-color;
+      outline: none;
+      padding: 0 0 10px 10px;
+      font-size: 14px;
+      color: $icon-color;
+    }
+  }
+
+  &__button {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondary-color;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+
+    &--filled {
+      padding: 13px 50px 11px 50px;
+      background-color: $main-color;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: default;
+    }
+  }
+}
+
+.close-popup {
+  width: 17px;
+  height: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  background: url('/images/icon-close.svg') no-repeat center;
+}

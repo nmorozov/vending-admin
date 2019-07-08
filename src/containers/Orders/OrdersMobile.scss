@@ -1,0 +1,41 @@
+@import '../../scss//colors';
+
+.orders-mobile {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  .order-mobile {
+    &__order {
+      width: 100%;
+      height: 270px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+      background-color: #ffffff;
+      padding: 20px 15px;
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    &__order_captions {
+      font-size: 14px;
+      font-weight: bold;
+      color: $secondary-text-rgba;
+      width: 93px;
+      margin-right: 28px;
+    }
+
+    &__order_caption {
+        margin-bottom: 15px;
+    }
+
+    &__order_value {
+        margin-bottom: 15px;
+        &--date {
+            font-weight: bold;
+            color: $main-text-rgba;
+        }
+    }
+  }
+}

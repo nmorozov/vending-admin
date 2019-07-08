@@ -1,0 +1,37 @@
+@import '../../scss/_colors.scss';
+
+.navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    margin: 0;
+    list-style: none;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    .navigation__navigation_item {
+        height: 30px;
+        width: 124px;
+        font-size: 14px;
+        text-align: center;
+        transition: 0.5s all;
+
+        .navigation__navigation_link {
+            color: $secondary-text-rgba;
+            background: none;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+        }
+
+        &.navigation_item_active {
+            border-bottom: 3px solid $secondary-color;
+            color: $main-text-rgba;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+export const FETCH_COINS_START = 'fetch_coins_start';
+export const FETCH_COINS_FINISH = 'fetch_coins_finish';
+export const FETCH_COINS_FAILED = 'fetch_coins_failed';
+export const LOAD_COINS_LIMIT = 10;
+export const CREATE_COIN_START = 'create_coin_start';
+export const CREATE_COIN_FINISH = 'create_coin_finish';
+export const CREATE_COIN_FAILED = 'create_coin_failed';
+export const UPDATE_COIN_START = 'update_coin_start';
+export const UPDATE_COIN_FINISH = 'update_coin_finish';
+export const UPDATE_COIN_FAILED = 'update_coin_failed';

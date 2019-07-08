@@ -1,0 +1,27 @@
+@import '../../scss/_colors.scss';
+
+.authorization-block-wrapper {
+  width: 510px;
+  height: 427px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
+  margin: 170px auto;
+  display: flex;
+  flex-flow: row;
+
+  &__check-in-coin-logo {
+    height: 100%;
+    width: 160px;
+    background-color: rgba(215, 215, 215, 0.32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__header_title {
+    width: 250px;
+    margin: 50px auto 0 auto;
+  }
+}

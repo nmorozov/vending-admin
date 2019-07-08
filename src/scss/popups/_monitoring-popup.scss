@@ -1,0 +1,107 @@
+.monitoring-popup {
+    width: 1061px;
+    min-height: 800px;
+    margin-bottom: 5%;
+    margin-top: 15%;
+    box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 0.5px;
+    top: 0% !important;
+    left: 50% !important;
+    transform: translate(-50%, -5%) !important;
+    border-image-source: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.4) 5%,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0)
+    );
+    border-image-slice: 1;
+  
+    @media (max-width: 768px) {
+      width: 1039px;
+      @media (max-width: 768px) {
+        width: auto;
+        overflow: auto;
+      }
+      height: 560px;
+      box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+      background-color: #ffffff;
+      border-style: solid;
+      border-width: 0.5px;
+      border-image-source: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.4) 5%,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 0)
+      );
+      border-image-slice: 1;
+    }
+  
+    &__note {
+      width: 309px;
+      height: 190px;
+      resize: none;
+      border: solid 1px #d7d7d7;
+      outline: none;
+      padding: 10px;
+      font-size: 14px;
+      color: $icon-color;
+    }
+  
+    &__body {
+      display: flex;
+      flex-direction: row;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+  
+    &__title {
+      font-size: 16px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.54);
+      margin-bottom: 40px;
+    }
+  
+    &__half_form {
+      margin-left: 60px;
+      @media (max-width: 768px) {
+        margin: 0 auto;
+      }
+    }
+  
+    &__buttons {
+      margin-top: 30px;
+    }
+
+    table {
+        width: 100%;
+    }
+  
+    .popup__button {
+      margin-right: 34px;
+    }
+
+    &__status-cell {
+      height: 25px;
+    }
+
+    &__point {
+      width: 6px;
+      height: 6px;
+      border-radius: 60px;
+      margin: 0 auto;
+  
+      &.monitoring-popup__point_green {
+        background-color: #259d1f;
+      }
+  
+      &.monitoring-popup__point_red {
+        background-color: #b83131;
+      }
+    }
+  }
+  

@@ -1,0 +1,13 @@
+export const FETCH_DEVICES_START = 'fetch_device_start';
+export const FETCH_DEVICES_FINISH = 'fetch_device_finish';
+export const FETCH_DEVICES_FAILED = 'fetch_device_failed';
+export const LOAD_DEVICES_LIMIT = 10;
+export const UPDATE_DEVICE_STATUS_START = 'update_device_status_start';
+export const UPDATE_DEVICE_STATUS_FINISH = 'update_device_status_finish';
+export const UPDATE_DEVICE_STATUS_FAILED = 'update_device_status_failed';
+export const UPDATE_DEVICE_START = 'update_device_start';
+export const UPDATE_DEVICE_FINISH = 'update_device_finish';
+export const UPDATE_DEVICE_FAILED = 'update_device_failed';
+export const CREATE_DEVICE_START = 'create_device_start';
+export const CREATE_DEVICE_FINISH = 'create_device_finish';
+export const CREATE_DEVICE_FAILED = 'create_device_failed';

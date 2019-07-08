@@ -1,0 +1,55 @@
+.customer_envelope_image {
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 120px;
+}
+
+.envelopes-page-wrapper {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  margin: 0 20px;
+  padding: 40px 30px 60px 30px;
+
+  .search-and-caption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+    .caption {
+      font-size: 30px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.87);
+      margin-right: 100px;
+    }
+  }
+
+  .device-filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .five-envelopes-container__envelope:nth-child(5n) {
+    margin-right: 30px;
+  }
+
+  .five-envelopes-container__envelope:nth-child(7n) {
+    margin-right: 30px;
+  }
+
+  .filter {
+    z-index: 9999;
+  }
+
+  .filter__title {
+    margin-right: 5px;
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #bea241;
+  }
+
+  .filter__icon {
+    color: #bea241;
+    width: 9px;
+  }
+}

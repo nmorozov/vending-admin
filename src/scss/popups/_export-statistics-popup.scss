@@ -1,0 +1,59 @@
+.confirm-popup-overlay {
+  background: red;
+  z-index: 9999;
+}
+
+.export-statistics-popup {
+  width: 630px;
+  height: 192px;
+  box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 0.5px;
+  z-index: 9999;
+  border-image-source: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4) 5%,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0)
+  );
+  border-image-slice: 1;
+
+  &__little_caption {
+    font-size: 10px;
+    color: $secondary-text-rgba;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__caption {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: $secondary-text-rgba;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: $main-color;
+      cursor: pointer;
+      margin-right: 60px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

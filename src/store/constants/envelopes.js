@@ -1,0 +1,13 @@
+export const FETCH_ENVELOPES_START = 'fetch_envelope_start';
+export const FETCH_ENVELOPES_FINISH = 'fetch_envelope_finish';
+export const FETCH_ENVELOPES_FAILED = 'fetch_envelope_failed';
+export const LOAD_ENVELOPES_LIMIT = 10;
+export const UPDATE_ENVELOPE_STATUS_START = 'update_envelope_status_start';
+export const UPDATE_ENVELOPE_STATUS_FINISH = 'update_envelope_status_finish';
+export const UPDATE_ENVELOPE_STATUS_FAILED = 'update_envelope_status_failed';
+export const UPDATE_ENVELOPE_START = 'update_envelope_start';
+export const UPDATE_ENVELOPE_FINISH = 'update_envelope_finish';
+export const UPDATE_ENVELOPE_FAILED = 'update_envelope_failed';
+export const CREATE_ENVELOPE_START = 'create_envelope_start';
+export const CREATE_ENVELOPE_FINISH = 'create_envelope_finish';
+export const CREATE_ENVELOPE_FAILED = 'create_envelope_failed';

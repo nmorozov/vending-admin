@@ -1,0 +1,11 @@
+export const FETCH_ORDERS_START = 'fetch_order_start';
+export const FETCH_ORDERS_FINISH = 'fetch_order_finish';
+export const FETCH_ORDERS_FAILED = 'fetch_order_failed';
+export const LOAD_ORDERS_LIMIT = 10;
+export const UPDATE_ORDER_START = 'update_order_start';
+export const UPDATE_ORDER_FINISH = 'update_order_finish';
+export const UPDATE_ORDER_FAILED = 'update_order_failed';
+export const CREATE_ORDER_START = 'create_order_start';
+export const CREATE_ORDER_FINISH = 'create_order_finish';
+export const CREATE_ORDER_FAILED = 'create_order_failed';
+export const DELETE_ORDER_SUCCESS = 'DELETE_ORDER_SUCCESS';

@@ -1,0 +1,67 @@
+@import '../../scss/_colors.scss';
+
+.notifications-container {
+  width: 62.2px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: rgba(153, 153, 153, 0.2);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &__open_drawer_button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__notifications_count {
+    font-size: 12px;
+    font-weight: bold;
+    color: $main-color;
+    margin-right: 7px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  & &__notifications_icon {
+    width: 16px;
+    height: 19.5px;
+    color: $icon-color;
+    opacity: 0.54;
+  }
+
+  & &__notifications_icon_black {
+    opacity: 1;
+  }
+
+  &__notifications_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: $main-text-alpha;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__close_drawer_button {
+    width: 17px;
+    height: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 60px;
+    top: 31px;
+    background: url('/images/icon-close.svg') no-repeat center;
+  }
+}
+
+.drawer-content {
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.24);
+  padding: 21px 60px 41px 60px;
+}

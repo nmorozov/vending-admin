@@ -1,0 +1,18 @@
+@import '../../scss/_colors.scss';
+
+.notification-container {
+  padding-bottom: 30px;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.12);
+  color: $secondary-text-rgba;
+  margin-bottom: 30px;
+
+  &__date {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
